@@ -52,7 +52,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Run API tests
-        run: dotnet test Task_TestAutomationFramework/Task_TestAutomationFramework.csproj --filter "FullyQualifiedName~API_TestCases" --logger "trx;LogFileName=api-tests.trx"
+        run: dotnet test Task_TA_Framework/Task_TestAutomationFramework.csproj --filter "FullyQualifiedName~API_TestCases" --logger "trx;LogFileName=api-tests.trx"
 
       - name: Upload API test results
         uses: actions/upload-artifact@v4
@@ -61,7 +61,8 @@ jobs:
           path: "**/api-tests.trx"
 
   ui-tests:
-    needs: build
+    needs: api-tests
+    if: always()
     runs-on: windows-latest
 
     steps:
