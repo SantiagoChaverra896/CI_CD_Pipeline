@@ -74,3 +74,4 @@ C:\Users\SM ZONA GEMAER\OneDrive\Escritorio\Test_CI_CD_Pipeline\Core\obj\Debug\n
 C:\Users\SM ZONA GEMAER\OneDrive\Escritorio\Test_CI_CD_Pipeline\Core\obj\Debug\net8.0\refint\Core.dll
 C:\Users\SM ZONA GEMAER\OneDrive\Escritorio\Test_CI_CD_Pipeline\Core\obj\Debug\net8.0\Core.pdb
 C:\Users\SM ZONA GEMAER\OneDrive\Escritorio\Test_CI_CD_Pipeline\Core\obj\Debug\net8.0\ref\Core.dll
+C:\Users\SM ZONA GEMAER\OneDrive\Escritorio\Test_CI_CD_Pipeline\Core\obj\Debug\net8.0\Core.sourcelink.json

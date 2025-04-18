@@ -17,8 +17,10 @@ namespace Task_TestAutomationFramework.API_TestCases
     [Parallelizable(ParallelScope.All)]
     public class APITestCases
     {
+#pragma warning disable NUnit1032 // An IDisposable field/property should be Disposed in a TearDown method
         protected RestClient _client;
-        
+#pragma warning restore NUnit1032 // An IDisposable field/property should be Disposed in a TearDown method
+
         [SetUp]
         public void Setup()
         {

@@ -16,7 +16,9 @@ namespace Task_TestAutomationFramework
     [TestFixture]
     public abstract class BaseTest
     {
+#pragma warning disable NUnit1032 // An IDisposable field/property should be Disposed in a TearDown method
         protected IWebDriver driver;
+#pragma warning restore NUnit1032 // An IDisposable field/property should be Disposed in a TearDown method
         private static readonly ILog Logger = LogManager.GetLogger(typeof(BaseTest));
 
         [SetUp]

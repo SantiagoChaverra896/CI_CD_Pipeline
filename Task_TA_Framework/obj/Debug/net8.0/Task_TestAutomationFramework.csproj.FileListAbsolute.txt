@@ -584,3 +584,4 @@ C:\Users\SM ZONA GEMAER\OneDrive\Escritorio\Test_CI_CD_Pipeline\Task_TA_Framewor
 C:\Users\SM ZONA GEMAER\OneDrive\Escritorio\Test_CI_CD_Pipeline\Task_TA_Framework\obj\Debug\net8.0\Task_TestAutomationFramework.pdb
 C:\Users\SM ZONA GEMAER\OneDrive\Escritorio\Test_CI_CD_Pipeline\Task_TA_Framework\obj\Debug\net8.0\Task_TestAutomationFramework.genruntimeconfig.cache
 C:\Users\SM ZONA GEMAER\OneDrive\Escritorio\Test_CI_CD_Pipeline\Task_TA_Framework\obj\Debug\net8.0\ref\Task_TestAutomationFramework.dll
+C:\Users\SM ZONA GEMAER\OneDrive\Escritorio\Test_CI_CD_Pipeline\Task_TA_Framework\obj\Debug\net8.0\Task_TestAutomationFramework.sourcelink.json
