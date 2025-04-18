@@ -32,10 +32,10 @@ jobs:
           dotnet-version: '8.0.x'  # or your actual version
 
       - name: Restore dependencies
-        run: dotnet restore Task_PageObjectPattern.sln
+        run: dotnet restore Task_TA_Framework/Task_PageObjectPattern.sln
 
       - name: Build solution
-        run: dotnet build Task_PageObjectPattern.sln --configuration Release
+        run: dotnet build Task_TA_Framework/Task_PageObjectPattern.sln --configuration Release
 
   api-tests:
     needs: build
