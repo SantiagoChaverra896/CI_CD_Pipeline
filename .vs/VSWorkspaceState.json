@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.github",
+    "\\.github\\workflows",
     "\\Task_TA_Framework"
   ],
-  "SelectedNode": "\\Task_TA_Framework\\Task_PageObjectPattern.sln",
+  "SelectedNode": "\\Task_TA_Framework\\BaseTest.cs",
   "PreviewInSolutionExplorer": false
 }

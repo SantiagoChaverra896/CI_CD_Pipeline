@@ -1,0 +1,86 @@
+name: Test Automation Pipeline
+
+on:
+    pull_request:
+        branches:
+            - master
+    schedule:
+            - cron: '0 2 * * *' # daily at 2AM UTC
+    workflow_dispatch:
+        inputs:
+            browser:
+                description: 'Browser to run UI tests against'
+                required: true
+                default: 'chrome'
+                type: choice
+                options:
+                  - chrome
+                  - edge
+                  - firefox
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'  # or your actual version
+
+      - name: Restore dependencies
+        run: dotnet restore Task_PageObjectPattern.sln
+
+      - name: Build solution
+        run: dotnet build Task_PageObjectPattern.sln --configuration Release
+
+  api-tests:
+    needs: build
+    runs-on: windows-latest
+    continue-on-error: true
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Run API tests
+        run: dotnet test Task_TestAutomationFramework/Task_TestAutomationFramework.csproj --filter "FullyQualifiedName~API_TestCases" --logger "trx;LogFileName=api-tests.trx"
+
+      - name: Upload API test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-test-results
+          path: "**/api-tests.trx"
+
+  ui-tests:
+    needs: build
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Run UI tests
+        run: |
+          dotnet test Task_TestAutomationFramework/Task_TestAutomationFramework.csproj --filter "FullyQualifiedName~UI_TestCases" --logger "trx;LogFileName=ui-tests.trx" -- TestRunParameters.Parameter\(name=\"Browser\",value="${{ github.event.inputs.browser }}\"\)
+
+      - name: Upload UI test results and screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-test-results
+          path: |
+            **/ui-tests.trx
+            **/*.png   # assuming screenshots are saved as png
