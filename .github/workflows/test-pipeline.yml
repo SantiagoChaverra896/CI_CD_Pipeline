@@ -76,7 +76,7 @@ jobs:
 
       - name: Run UI tests
         run: |
-          dotnet test Task_TA_Framework/Task_TestAutomationFramework.csproj --filter "FullyQualifiedName~UI_TestCases" --logger "trx;LogFileName=ui-tests.trx" -- TestRunParameters.Parameter:name="Browser",value="${{ github.event.inputs.browser }}"
+          dotnet test Task_TA_Framework/Task_TestAutomationFramework.csproj --filter "FullyQualifiedName~UI_TestCases" --logger "trx;LogFileName=ui-tests.trx" -- TestRunParameters.Parameter(name="Browser",value="${{ github.event.inputs.browser || 'chrome' }}")
 
       - name: Upload UI test results and screenshots
         uses: actions/upload-artifact@v4
