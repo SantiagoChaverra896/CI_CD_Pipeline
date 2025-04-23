@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\test-pipeline.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SM ZONA GEMAER\\OneDrive\\Escritorio\\Test_CI_CD_Pipeline\\Task_TA_Framework\\TestRunParameters.runsettings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Task_TA_Framework\\TestRunParameters.runsettings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SM ZONA GEMAER\\OneDrive\\Escritorio\\Test_CI_CD_Pipeline\\Task_TA_Framework\\Task_TestAutomationFramework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Task_TA_Framework\\Task_TestAutomationFramework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Task_TestAutomationFramework.csproj",
               "DocumentMoniker": "C:\\Users\\SM ZONA GEMAER\\OneDrive\\Escritorio\\Test_CI_CD_Pipeline\\Task_TA_Framework\\Task_TestAutomationFramework.csproj",
               "RelativeDocumentMoniker": "Task_TA_Framework\\Task_TestAutomationFramework.csproj",
@@ -58,19 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TestRunParameters.runsettings",
-              "DocumentMoniker": "C:\\Users\\SM ZONA GEMAER\\OneDrive\\Escritorio\\Test_CI_CD_Pipeline\\Task_TA_Framework\\TestRunParameters.runsettings",
-              "RelativeDocumentMoniker": "Task_TA_Framework\\TestRunParameters.runsettings",
-              "ToolTip": "C:\\Users\\SM ZONA GEMAER\\OneDrive\\Escritorio\\Test_CI_CD_Pipeline\\Task_TA_Framework\\TestRunParameters.runsettings",
-              "RelativeToolTip": "Task_TA_Framework\\TestRunParameters.runsettings",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-23T03:17:58.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "TestCases.cs",
               "DocumentMoniker": "C:\\Users\\SM ZONA GEMAER\\OneDrive\\Escritorio\\Test_CI_CD_Pipeline\\Task_TA_Framework\\UI_TestsCases\\TestCases.cs",
               "RelativeDocumentMoniker": "Task_TA_Framework\\UI_TestsCases\\TestCases.cs",
@@ -82,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "TestRunParameters.runsettings",
               "DocumentMoniker": "C:\\Users\\SM ZONA GEMAER\\OneDrive\\Escritorio\\Test_CI_CD_Pipeline\\TestRunParameters.runsettings",
               "RelativeDocumentMoniker": "TestRunParameters.runsettings",
@@ -99,7 +83,7 @@
               "RelativeDocumentMoniker": ".github\\workflows\\test-pipeline.yml",
               "ToolTip": "C:\\Users\\SM ZONA GEMAER\\OneDrive\\Escritorio\\Test_CI_CD_Pipeline\\.github\\workflows\\test-pipeline.yml",
               "RelativeToolTip": ".github\\workflows\\test-pipeline.yml",
-              "ViewState": "AQIAADkAAAAAAAAAAAAkwFEAAAA1AAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAkwE8AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2025-04-18T05:08:54.373Z",
               "EditorCaption": ""
