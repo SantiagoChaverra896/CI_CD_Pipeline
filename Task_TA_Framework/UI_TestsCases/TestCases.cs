@@ -10,7 +10,7 @@ using Core.Core;
 
 namespace Task_TestAutomationFramework.UI_TestsCases
 {
-    internal class TestCases: BaseTest
+    public class TestCases: BaseTest
     {
         [Test]
         [TestCase("SAP", "Bogota")]

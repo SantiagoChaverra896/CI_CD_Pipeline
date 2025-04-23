@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Task_TestAutomationFramework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74ce808ceb2431b82e9b156d8c8a708b39ab9b52")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8581ff6ee86c74b51c0285cf10e663989d843df2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Task_TestAutomationFramework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Task_TestAutomationFramework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
