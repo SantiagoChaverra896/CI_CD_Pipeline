@@ -54,11 +54,18 @@ jobs:
       - name: Run API tests
         run: dotnet test Task_TA_Framework/Task_TestAutomationFramework.csproj --filter "FullyQualifiedName~API_TestCases" --logger "trx;LogFileName=api-tests.trx"
 
+      - name: List test result files
+        run: |
+         echo "Current Directory:"
+         pwd
+         echo "Listing all trx files:"
+         dir Task_TA_Framework\TestResults /b
+
       - name: Upload API test results
         uses: actions/upload-artifact@v4
         with:
           name: api-test-results
-          path: "**/api-tests.trx"
+          path: Task_TA_Framework/TestResults/*.trx
 
   ui-tests:
     needs: api-tests
