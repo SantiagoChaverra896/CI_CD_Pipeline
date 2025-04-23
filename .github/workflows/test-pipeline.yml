@@ -76,9 +76,9 @@ jobs:
 
       - name: Run UI tests
         run: |
-          dotnet test Task_TA_Framework/Task_TestAutomationFramework.csproj 
-            --filter "FullyQualifiedName~Task_TestAutomationFramework.UI_TestsCases.TestCases" 
-            --logger "trx;LogFileName=ui-tests.trx" 
+          dotnet test Task_TA_Framework/Task_TestAutomationFramework.csproj \
+            --filter "FullyQualifiedName~Task_TestAutomationFramework.UI_TestsCases.TestCases" \
+            --logger "trx;LogFileName=ui-tests.trx" \
             --settings Task_TA_Framework/TestRunParameters.runsettings #-- TestRunParameters.Parameter(name="Browser",value="chrome")
 
       - name: Upload UI test results and screenshots
