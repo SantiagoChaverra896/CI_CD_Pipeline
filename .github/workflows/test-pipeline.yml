@@ -93,7 +93,8 @@ jobs:
         with:
           name: ui-test-results
           path: |
-            CI_CD_Pipeline/Task_TA_Framework/TestResults/ui-tests.trx
+            Task_TA_Framework/TestResults/ui-tests.trx
+            # CI_CD_Pipeline/Task_TA_Framework/TestResults/ui-tests.trx
             # CI_CD_Pipeline/Task_TA_Framework/bin/Debug/net8.0/Screenshots/
             # Task_TA_Framework/TestResults/*.trx # **/ui-tests.trx
             # **/*.png   # assuming screenshots are saved as png
