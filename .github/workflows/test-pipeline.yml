@@ -87,14 +87,17 @@ jobs:
         run: |
           dotnet test Task_TA_Framework/Task_TestAutomationFramework.csproj --filter "FullyQualifiedName~Task_TestAutomationFramework.UI_TestsCases.TestCases" --logger "trx;LogFileName=ui-tests.trx" --settings Task_TA_Framework/TestRunParameters.runsettings    
 
-      - name: Upload UI test results and screenshots
+      - name: Upload UI test results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ui-test-results
           path: |
             Task_TA_Framework/TestResults/ui-tests.trx
-            # CI_CD_Pipeline/Task_TA_Framework/TestResults/ui-tests.trx
-            # CI_CD_Pipeline/Task_TA_Framework/bin/Debug/net8.0/Screenshots/
-            # Task_TA_Framework/TestResults/*.trx # **/ui-tests.trx
-            # **/*.png   # assuming screenshots are saved as png
+
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: Task_TA_Framework/bin/Debug/net8.0/Screenshots
