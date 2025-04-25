@@ -2339,3 +2339,8 @@ NUnit.Framework.AssertionException:   Expected: True
 [2025-04-22 21:33:11,079] [INFO] - Task5 completed successfully.
 [2025-04-22 21:33:11,176] [INFO] - Task4 completed successfully.
 [2025-04-22 21:33:11,524] [INFO] - Task3 completed successfully.
+[2025-04-24 15:38:13,478] [INFO] - Starting Task3: Validate user content and structure.
+[2025-04-24 15:38:13,478] [INFO] - Starting Task2: Validate response headers for /users.
+[2025-04-24 15:38:13,478] [INFO] - Starting Task5: Request to an invalid endpoint.
+[2025-04-24 15:38:13,478] [INFO] - Starting Task1: Fetch list of users.
+[2025-04-24 15:38:13,478] [INFO] - Starting Task4: Create a new user.
